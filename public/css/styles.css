@@ -1,0 +1,504 @@
+* { box-sizing: border-box;
+    /*ROMIN -ACA AGREGRO}*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  /*ROMINA - ESTILO NAVBAR*/
+.max-width{
+    max-width: 1300px;
+    padding: 10px, 80px;
+    margin:  auto;
+
+}
+.max-width-logo{
+    max-width: 1900px;
+    padding: 0, 80px, 0, 0;
+    margin:  auto 
+
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 0px 0 ;
+    /* background-color:rgb(248, 246, 244); */
+    font-family: Raleway,sans-serif;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0 ;
+    background-color:rgb(248, 246, 244);
+    transition: all 0.3s ease;
+   }
+/* .navbar .logo {
+    
+} */
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar.sticky .menu li{
+    background-color:rgb(248, 246, 244);
+    transition: all 0.3s ease;
+}
+/*Boton de Menu (Barras)*/
+.menu-btn{
+    color:#302f2f;
+    font-size: 24px ;
+    cursor: pointer;
+    display: none;
+}
+
+
+.navbar .menu li a {
+    color: #767779;
+    /* margin-left: 25px; */
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #1F1F24;
+}
+/* home sector estilos */
+.home{
+    display: flex;
+    background: url("../images/banner.jpg") no-repeat center;
+    height: 100vh;
+    color:#302f2f;
+    min-height:500px;
+    font-family: Raleway,sans-serif;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10%;
+    justify-content: flex-end;
+
+}
+
+
+.home .max-width {
+    margin: auto ;
+
+}
+
+.home .home-content {
+    padding-left: 50vw;
+}
+
+.home .home-content .text-1 {
+    font-size: 20px;
+    color:#767779;
+}
+
+.home .home-content .text-2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-left: -3px;
+    color:#D2C2B0;
+      text-align: right;
+}
+
+.home .home-content .text-3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px, 0, 0, 5px;
+    color: #ffffff;
+    background-color: #D2C2B0;
+}
+
+.home .home-content .text-3 span {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: #D2C2B0; 
+}
+
+/*QUERY STAR MEDIA RESPONSIVO*/
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+      }
+      .menu-btn{
+        display: block;
+        z-index:999 ;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d" ;
+    }
+      .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background:#ffffff;
+        }
+        .navbar .menu.active {
+        left: 0%;
+        }    
+
+      .navbar .menu li{
+        display:block;
+              }
+      .navbar .menu li a{
+        display: inline-flexbox;
+        margin: 20px 0;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 80px;
+                      }
+    }
+
+
+  /*ROMINA - hasta aca ESTILO NAVBAR*/
+body {
+    background-color:#ffffff;
+    margin: 0px;
+    color: #302f2f;
+    font-family: Raleway, sans-serif;
+}
+
+.line-hr{
+    border: solid white 1px;
+}
+
+.banner1 {
+    background-color: rgb(248, 246, 244);
+    /*border: black 1px solid;*/
+    margin: auto;
+    width: 100vw;
+    min-height: 33px;
+    text-align: center;
+    padding: 7px 10px ;
+    font-family: Raleway, sans-serif;
+    color: black;
+    text-transform: none;
+    font-size: 13px;
+    box-sizing: border-box;
+  
+    letter-spacing: .06em;
+
+}
+
+/* div{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: black;
+    background: transparent;
+    min-height: 50px;
+} */
+.mainheader-logo{
+    background: url('../images/logo.jpg') no-repeat center #1F1F24;
+    margin: auto;
+    width: 100vw;
+    height:31vh;
+    text-align: center;
+    padding: 5px;
+    font-size: 150px;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    position: relative;
+
+}
+
+.mainheader  .top.row{
+    padding-top: 30px;
+    padding-bottom:20px;
+    background-color: black;
+    background: transparent;
+    min-height: 40px;
+}
+
+
+.banner3 {
+    background-color: white;
+    margin: auto;
+    width: 70vw;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    font-family: 'AileronUltralight';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.banner4 {
+    background-color: #e1d8d3;
+    border: black 1px solid;
+    margin: auto;
+    width: 70vw;
+    height: 120px;
+    text-align: center;
+    padding: 50px;
+    font-family: 'AileronUltralight';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.button {
+    background-color: white;
+    text-align: center;
+    border: black 0,5px;
+}
+
+.nav {
+    margin: auto;
+}
+
+.containerPortada {
+    display: flex;
+    margin: auto;
+    border: none;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.containerPortada img{
+    width: 2438;
+    height: 1080;
+
+}
+
+.divButtons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.divButtons .nav_bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly; 
+    text-align: center;
+}
+
+.nav_bar a {
+    color: black;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.divButtons .search-container{
+    display: flex;
+    text-align: center;
+}
+
+.row {
+    text-align: justify;
+    display: flex;    
+    height: 230px;
+    width: 70vw;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: transparent;
+}
+
+.row .img-container img {
+    width: 18vw;
+    height: 230px;
+    padding: 5px 5px;
+    margin: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: #e1d8d3;
+    justify-content: space-between;
+}
+
+.container_caja_personalizada{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    border: 1px solid black;
+    height: 40vh;
+    background-color: transparent;
+    margin: auto;
+    
+}
+
+.caja_personalizada {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.container_caja_personalizada img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.descricpion_caja_personalizada {
+    background-color: #e1d8d3;
+    width: 50%;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.suscripcion {
+    background-image:  url("../images/pexels.jpeg");
+    border: solid black 1px;
+    height: 120px;
+    width: 70vw;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+
+.suscripcion .suscripcion_banner {
+    align-items: center;
+    margin: auto;
+    width: 30vw;
+}
+
+.suscripcion .suscripcion_banner p {
+    font-family: 'AileronUltralight';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 30vw;
+    height: 30px;
+    border: solid black 1px;
+    text-align: center;
+    }
+    
+.suscripcion .suscripciones_correo {
+    font-family: 'AileronUltralight';
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    margin: auto;
+    text-align: center;
+}
+
+.copyright {
+    margin: auto;
+    font-weight: bold;
+    font-family: 'AileronUltralight';
+    border: solid black 1px;
+    height: 100px;
+    width: 70vw;
+    background-color: #e1d8d3;
+    text-align: center;
+}
+
+.copyright p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*--------------------------------------------*/
+
+
+.aviso {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'AileronUltralight';
+}
+
+.logo h1 {
+    display: flex;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+.botones {
+    text-align: center;
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tituloCarrito {
+    text-align: center;
+    
+}
+
+.producto h4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 3px;
+    width: max-content;
+    background-color: #ffffff;
+    
+
+}
+
+.subtotal h4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 3px;
+    width: max-content;
+    height: max-content;
+    float: right;
+    background-color: #ffffff;
+    
+}
+
+
+.imagen_producto img{
+    width: 20%;
+    height: 20%;
+}
+
+.detalles_compra h4 {
+    
+    border: 2px solid black;
+    padding: 3px;
+    width: max-content;
+    height: max-content;
+    float: right;
+    margin: 10px;
+    background-color: #ffffff;
+
+}
+
+.pie h4 {
+    border: 2px solid black;
+    padding: 3px;
+    width: max-content;
+    height: max-content;
+    float: left;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.pie2 h4 {
+    display: block;
+    border: 2px solid black;
+    padding: 3px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
