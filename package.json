@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "name": "grupo_11_giftbox",
+  "description": "Giftbox es un e-commerce que brinda la posibilidad a toda persona que precise o quiera realizar regalos, ya sea armados o personalizados dentro de una variada gama de productos al alcance de la mano.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grupo11giftbox/grupo_11_giftbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grupo11giftbox/grupo_11_giftbox/issues"
+  },
+  "homepage": "https://github.com/grupo11giftbox/grupo_11_giftbox#readme"
+}
