@@ -1,4 +1,4 @@
-const express = require('express');
+/*  */const express = require('express');
 const path = require('path');
 const app = express();
 
@@ -36,6 +36,6 @@ app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${a
 */
 
 //Escuchamos por Puerto 3000- Siempre al final segun el profe.
-app.listen(3030, ()=>{
-    console.log("Servidor escuchando en puerto 3030");
+app.listen(3000, ()=>{
+    console.log("Servidor escuchando en puerto 3000");
 });

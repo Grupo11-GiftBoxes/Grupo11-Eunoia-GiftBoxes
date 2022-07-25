@@ -3,49 +3,134 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
   /*ROMINA - ESTILO NAVBAR*/
+
+section{
+    padding: 100px 0;;
+}
 .max-width{
     max-width: 1300px;
-    padding: 10px, 80px;
+    padding: 0, 80px;
     margin:  auto;
 
 }
-.max-width-logo{
-    max-width: 1900px;
-    padding: 0, 80px, 0, 0;
-    margin:  auto 
-
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
 }
 
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/*navbar styling*/
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 0px 0 ;
-    /* background-color:rgb(248, 246, 244); */
+    top: 120px;
+    background-color:rgb(248, 246, 244);
     font-family: Raleway,sans-serif;
     font-size: 17px;
     transition: all 0.3s ease;
+    padding: 0px 0;
 }
 .navbar.sticky{
     padding: 15px 0 ;
     background-color:rgb(248, 246, 244);
     transition: all 0.3s ease;
    }
-/* .navbar .logo {
-    
-} */
-
-.navbar .max-width {
+.navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1900px;
+    padding: 0, 80px, 0, 0;
+    margin: auto;
+}
+.banner1 {
+    background-color: rgb(248, 246, 244);
+    margin: auto;
+    width: 100vw;
+    min-height: 28px;
+    text-align: center;
+    padding: 7px 10px ;
+    font-family: Raleway, sans-serif;
+    color:#302f2f;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 12px;  
+    letter-spacing: .06em;
+}
+.mainheader-logo{
+    background: url('../images/logo.jpg') no-repeat center #1F1F24;
+    margin: auto;
+    width: 100vw;
+    height:28vh;
+    text-align: center;
+    font-size: 150px;
+    color: white;
+    align-content: center;
+    position: fixed;
 }
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-
 .navbar.sticky .menu li{
     background-color:rgb(248, 246, 244);
     transition: all 0.3s ease;
@@ -79,7 +164,8 @@
     font-size: 20px;
     text-align: right;
     margin-top: 10%;
-    justify-content: flex-end;
+    justify-content:space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -94,16 +180,19 @@
 }
 
 .home .home-content .text-1 {
+    display: flex;
     font-size: 20px;
     color:#767779;
+    justify-content: flex-end;
+    
 }
 
 .home .home-content .text-2 {
     font-size: 35px;
     font-weight: 900;
     margin-left: -3px;
-    color:#D2C2B0;
-      text-align: right;
+    color:#ffffff;
+    text-align: right;
 }
 
 .home .home-content .text-3 {
@@ -157,7 +246,7 @@
         padding-top: 80px;
                       }
     }
-
+    
 
   /*ROMINA - hasta aca ESTILO NAVBAR*/
 body {
@@ -171,24 +260,6 @@ body {
     border: solid white 1px;
 }
 
-.banner1 {
-    background-color: rgb(248, 246, 244);
-    /*border: black 1px solid;*/
-    margin: auto;
-    width: 100vw;
-    min-height: 33px;
-    text-align: center;
-    padding: 7px 10px ;
-    font-family: Raleway, sans-serif;
-    color: black;
-    text-transform: none;
-    font-size: 13px;
-    box-sizing: border-box;
-  
-    letter-spacing: .06em;
-
-}
-
 /* div{
     padding-top: 30px;
     padding-bottom: 20px;
@@ -196,29 +267,26 @@ body {
     background: transparent;
     min-height: 50px;
 } */
-.mainheader-logo{
-    background: url('../images/logo.jpg') no-repeat center #1F1F24;
-    margin: auto;
-    width: 100vw;
-    height:31vh;
-    text-align: center;
-    padding: 5px;
-    font-size: 150px;
-    font-weight: bold;
-    color: white;
-    align-content: center;
-    position: relative;
-
-}
 
 .mainheader  .top.row{
     padding-top: 30px;
-    padding-bottom:20px;
+    padding-bottom:30px;
     background-color: black;
     background: transparent;
-    min-height: 40px;
+    min-height: 35px;
 }
-
+.menu {
+    margin-bottom: 60px;
+    width: 100vw;
+    height:10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    align-content: center;
+    position: relative;
+    padding: 45px;
+}
 
 .banner3 {
     background-color: white;
@@ -252,9 +320,6 @@ body {
     border: black 0,5px;
 }
 
-.nav {
-    margin: auto;
-}
 
 .containerPortada {
     display: flex;
@@ -271,20 +336,6 @@ body {
 
 }
 
-.divButtons {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.divButtons .nav_bar {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly; 
-    text-align: center;
-}
-
 .nav_bar a {
     color: black;
     text-decoration: none;
@@ -293,6 +344,37 @@ body {
     font-style: normal;
 }
 
+.nav-logos-left li {
+    color:#302f2f;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    font-size: 10px;
+    align-items: flex-end;
+}
+
+.nav-logos-left li a  {
+    color:#302f2f;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    font-size: 10px;
+    align-self: flex-start;
+}
+
+.nav-logos-right li {
+    color:#302f2f;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    font-size: 10px;
+    align-items: flex-start;
+}
+
+.nav-logos-right li a  {
+    color:#302f2f;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    font-size: 10px;
+    align-self: flex-end;
+}
 .divButtons .search-container{
     display: flex;
     text-align: center;
