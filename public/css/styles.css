@@ -127,10 +127,21 @@ section .title::after{
     align-content: center;
     position: fixed;
 }
+
+ul.menu{
+    background-color: #fffff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    max-width: 1900px;
+    padding: 20px, 20px, 0, 0;
+   
+    }
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
+ 
 .navbar.sticky .menu li{
     background-color:rgb(248, 246, 244);
     transition: all 0.3s ease;
@@ -142,7 +153,6 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-
 
 .navbar .menu li a {
     color: #767779;
@@ -276,16 +286,19 @@ body {
     min-height: 35px;
 }
 .menu {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    margin-top: 25px;
     width: 100vw;
     height:10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     color: white;
     align-content: center;
     position: relative;
-    padding: 45px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: Raleway, sans-serif;
 }
 
 .banner3 {
