@@ -487,19 +487,24 @@ body {
 }
 
 .copyright {
-    margin: auto;
-    font-weight: bold;
-    font-family: 'AileronUltralight';
-    border: solid black 1px;
-    height: 100px;
-    width: 70vw;
-    background-color: #e1d8d3;
+    margin: 0 0 0 0;
+    font-weight: 200;
+    color:#f1f1f1;
+    font-family: Raleway, sans-serif;
+    height: 60px;
+    width: 100vw;
+    background-color:#1F1F24;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .copyright p {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 0;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
 }
 
 /*--------------------------------------------*/
@@ -595,5 +600,34 @@ body {
     background-color: #ffffff;
     text-align: center;
 }
+
+body.index #footer {
+    margin-top: 0;
+}
+#footer {
+    text-align: left;
+}
+#footer {
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+#footer {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+* {
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(boxsizing.htc);
+}
+
 
 
