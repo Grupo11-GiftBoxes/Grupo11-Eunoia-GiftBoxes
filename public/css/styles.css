@@ -82,7 +82,7 @@ section .title::after{
 .navbar{
     position: fixed;
     width: 100%;
-    top: 120px;
+    top: 90px;
     background-color:rgb(248, 246, 244);
     font-family: Raleway,sans-serif;
     font-size: 17px;
@@ -104,9 +104,8 @@ section .title::after{
 }
 .banner1 {
     background-color: rgb(248, 246, 244);
-    margin: auto;
     width: 100vw;
-    min-height: 28px;
+    min-height: 20px;
     text-align: center;
     padding: 7px 10px ;
     font-family: Raleway, sans-serif;
@@ -115,27 +114,30 @@ section .title::after{
     font-weight: 400;
     font-size: 12px;  
     letter-spacing: .06em;
+    margin-top: -1vh;
 }
 .mainheader-logo{
     background: url('../images/logo.jpg') no-repeat center #1F1F24;
+    size: auto;
     margin: auto;
     width: 100vw;
-    height:28vh;
+    height:25vh;
     text-align: center;
     font-size: 150px;
     color: white;
     align-content: center;
     position: fixed;
+    margin-top: 7vh;
 }
 
 ul.menu{
-    background-color: #fffff;
+    background-color: #ffffff;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content:center;
     max-width: 1900px;
     padding: 20px, 20px, 0, 0;
-   
+    margin-top: 2vh;
     }
 .navbar .menu li {
     list-style: none;
@@ -146,18 +148,13 @@ ul.menu{
     background-color:rgb(248, 246, 244);
     transition: all 0.3s ease;
 }
-/*Boton de Menu (Barras)*/
-.menu-btn{
-    color:#302f2f;
-    font-size: 24px ;
-    cursor: pointer;
-    display: none;
-}
 
 .navbar .menu li a {
     color: #767779;
     /* margin-left: 25px; */
     transition: color 0.3s ease;
+    align-items: center;
+    padding-left: 4px;    
 }
 
 .navbar .menu li a:hover{
@@ -228,10 +225,22 @@ ul.menu{
       }
       .menu-btn{
         display: block;
-        z-index:999 ;
+        background-color: #e1d8d3;
+        padding: 15px 10px;
+        max-width: 150x;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 18px;
+        
     }
     .menu-btn i.active::before{
         content: "\f00d" ;
+        background-color: #e1d8d3;
+        padding: 15px 10px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 18px;
+
     }
       .navbar .menu{
         position: fixed;
@@ -287,7 +296,7 @@ body {
 }
 .menu {
     margin-bottom: 20px;
-    margin-top: 25px;
+    margin-top: -22px;
     width: 100vw;
     height:10px;
     text-align: center;
@@ -358,15 +367,18 @@ body {
 }
 
 .nav-logos-left li {
-    color:#302f2f;
+    color:#e1d8d3;
     display: flex;
     font-family: Raleway, sans-serif;
     font-size: 10px;
     align-items: flex-end;
+    padding: 10px;
+    margin-left: 0vw;
+    margin-top: -15vh   ;
 }
 
 .nav-logos-left li a  {
-    color:#302f2f;
+    color:#e1d8d3;
     display: flex;
     font-family: Raleway, sans-serif;
     font-size: 10px;
@@ -379,6 +391,7 @@ body {
     font-family: Raleway, sans-serif;
     font-size: 10px;
     align-items: flex-start;
+    padding: 10px;
 }
 
 .nav-logos-right li a  {
@@ -443,42 +456,43 @@ body {
     background-color: #e1d8d3;
     width: 50%;
     margin: 5px;
-    border: 1px solid black;
 }
 
 .suscripcion {
-    background-image:  url("../images/pexels.jpeg");
-    border: solid black 1px;
-    height: 120px;
-    width: 70vw;
+    background-image:  url("../images/suscripcion.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    box-sizing: content-box;
+    height: 100x;
+    width: 100vw;
     flex-direction: column;
     margin: auto;
-    padding: 20px;
-    justify-content: center;
+    padding: 80px;
+    justify-content: right;
 
 }
 
 
 .suscripcion .suscripcion_banner {
-    align-items: center;
+    align-items:flex-start;
     margin: auto;
     width: 30vw;
+
 }
 
 .suscripcion .suscripcion_banner p {
-    font-family: 'AileronUltralight';
-    font-weight: bold;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    color: black;
-    background-color: white;
-    width: 30vw;
-    height: 30px;
-    border: solid black 1px;
-    text-align: center;
+    color:#1F1F24;
+    background-color:#ffffff;
+    width: 45vw;
+    height: 100px;
+    text-align: left;
     }
     
 .suscripcion .suscripciones_correo {
-    font-family: 'AileronUltralight';
+    font-family: Raleway, sans-serif;
     font-weight: bold;
     color: black;
     background-color: transparent;
@@ -491,7 +505,7 @@ body {
     font-weight: 200;
     color:#f1f1f1;
     font-family: Raleway, sans-serif;
-    height: 60px;
+    height: 40px;
     width: 100vw;
     background-color:#1F1F24;
     text-align: center;
@@ -504,7 +518,7 @@ body {
     text-align: center;
     padding-top: 0;
     font-family: Raleway, sans-serif;
-    font-size: 14px;
+    fon
 }
 
 /*--------------------------------------------*/
@@ -600,34 +614,5 @@ body {
     background-color: #ffffff;
     text-align: center;
 }
-
-body.index #footer {
-    margin-top: 0;
-}
-#footer {
-    text-align: left;
-}
-#footer {
-    background: #ffffff;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
-}
-#footer {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-* {
-    margin: 0;
-}
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url(boxsizing.htc);
-}
-
 
 
