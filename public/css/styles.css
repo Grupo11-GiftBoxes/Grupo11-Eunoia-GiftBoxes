@@ -127,7 +127,7 @@ section .title::after{
     color: white;
     align-content: center;
     position: fixed;
-    margin-top: 7vh;
+    margin-top: 1vh;
 }
 
 ul.menu{
@@ -136,9 +136,11 @@ ul.menu{
     align-items:center;
     justify-content:center;
     max-width: 1900px;
-    padding: 20px, 20px, 0, 0;
-    margin-top: 2vh;
-    }
+    padding: 20px, 20px, 10px, 0;
+    margin-top: -19px;
+    height:35px;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -226,7 +228,7 @@ ul.menu{
 .buscador{
     position:fixed;
     padding: 5px;
-    margin-top: -150px;
+    margin-top: -147px;
     margin-left: 25px;
     opacity: 55%;
     font-family: Raleway,sans-serif;
@@ -238,24 +240,31 @@ ul.menu{
     text-transform: lowercase;
     padding: 0px 20px;
     color:#1F1F24;
-    width: 240px;
+    width: 215px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
+    margin-top: 52px;
     border-radius: 2px;
 }
-.btn-buscador i{
+.btn-buscador {
     position:fixed;
     padding: 5px;
-    margin-top: -52px;
-    margin-left: 235px;
-    font-size: 22px;
-    line-height: 15px;
-    top: 100px;
+    margin-top: -77px;
+    margin-left: 230px;
+    font-size: 17px;
+    text-align: center;
+    top: 117px;
     left: 10px;
-    color:#302f2f
-
+    background:#1F1F24;
+    color: #888;
+    border: 1px solid #767779;
+    size: 50px;
+    border-radius: 30%;
+    cursor: pointer;
 }
+
+
 
 /*QUERY STAR MEDIA RESPONSIVO*/
 
@@ -411,7 +420,7 @@ body {
     font-size: 20px;
     justify-content: flex-end;
     margin-right: 40px;
-    margin-top: -215px;
+    margin-top: -200px;
     align-self: center;
     }
 .nav-logos i{
