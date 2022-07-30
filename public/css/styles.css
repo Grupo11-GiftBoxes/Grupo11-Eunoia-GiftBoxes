@@ -218,13 +218,45 @@ ul.menu{
     background-color: #D2C2B0; 
 }
 
-.nav-logos-left{
-    display: flex;
-}
 
 .menu-btn{
     display: none;
 }
+
+.buscador{
+    position:fixed;
+    padding: 5px;
+    margin-top: -150px;
+    margin-left: 25px;
+    opacity: 55%;
+    font-family: Raleway,sans-serif;
+}
+
+.buscador input{
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    text-transform: lowercase;
+    padding: 0px 20px;
+    color:#1F1F24;
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 2px;
+}
+.btn-buscador i{
+    position:fixed;
+    padding: 5px;
+    margin-top: -52px;
+    margin-left: 235px;
+    font-size: 22px;
+    line-height: 15px;
+    top: 100px;
+    left: 10px;
+    color:#302f2f
+
+}
+
 /*QUERY STAR MEDIA RESPONSIVO*/
 
 @media (max-width: 947px){
@@ -383,7 +415,7 @@ body {
     align-self: center;
     }
 .nav-logos i{
-    color:#f1f1f1;
+    color:#888;
     margin-right: 10px;
     margin-left: 10px;
     display: inline-block;
