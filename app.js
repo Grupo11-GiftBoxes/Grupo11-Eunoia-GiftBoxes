@@ -40,7 +40,10 @@ app.use(function(err, req, res, next) {
 
 app.get('/', (req, res)=> {
   res.render('index')
-})
+});
+app.get('/users/list', (req, res)=> {
+  res.render('usersList')
+});
 
 app.listen(3000,()=>{
   console.log('SERVIDOR ESCUCHANDO')
