@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  form id='register' class='input-group-register' method="POST" action="/users/edit?_method=PUT">
+        <input type='text'class='input-field'placeholder='Tu Nombre' required name="name" value="<%= usertoEdit.name %>">
+        <!-- <input type='email'class='input-field'placeholder='Email' required name="email" value="<%= usertoEdit.email %>">
+        <input type='password'class='input-field'placeholder='Ingrese su Contraseña' required name="password" value="<%= usertoEdit.password %>">
+        <input type='password'class='input-field'placeholder='Confirme su Contraseña'  required name="passwordConfirm" value="<%= usertoEdit.password %>"> -->
+        <button type='submit'class='submit-btn'>Editar</button>
+    </form>
+</body>
+</html>

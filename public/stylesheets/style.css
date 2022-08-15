@@ -1,16 +1,27 @@
+@import url(styleLogin.css);
+@import url(normalize.css);
+
 * 
 { 
   box-sizing: border-box;
-  /*ROMIN -ACA AGREGRO}*/
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
 }
 
-:root 
+
+:root  
 {
-  --colortextoparrafos: #212121
+  /* Palette for Eunoia-Gift Boxes*/    
+  --beigeGris: #616161;
+  --blancoTiza: #f5f5f5;
+  --beige: #E1DBD3;
+  --negro: #1f1f24;
+  --siena: #D1C1AF;
+
+  /*Font-family for Eunoia-Gift Boxes*/
+  --fuenteEunoia: font-family: Raleway,sans-serif;
 }
 
 html
@@ -18,7 +29,7 @@ html
   scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
+/* ----------custom scroll bar --------*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -30,14 +41,10 @@ html
 {
   background: #888;
 }
-
 ::-webkit-scrollbar-thumb:hover 
 {
-  background: #;
+  background: #888;
 }
-
-/*ROMINA - ESTILO NAVBAR*/
-
 section
 {
   padding: 100px 0;;
@@ -47,57 +54,8 @@ section
   max-width: 1300px;
   padding: 0, 80px;
   margin:  auto;
-
 }
-.about, .services, .skills, .teams, .contact, footer
-{
-  font-family: 'Poppins', sans-serif;
-}
-
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content
-{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-section .title
-{
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: 'Ubuntu', sans-serif;
-}
-section .title::before
-{
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-section .title::after
-{
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  font-size: 20px;
-  color: crimson;
-  padding: 0 5px;
-  background: #fff;
-  transform: translateX(-50%);
-}
-/*navbar styling*/
+/*-----------navbar styling--------*/
 .navbar
 {
   position: fixed;
@@ -143,7 +101,6 @@ section .title::after
 .mainheader-logo
 {
   background: url('../images/encabezado.jpg') no-repeat center #1F1F24;
-  /* size: auto; */
   margin: auto;
   width: 100vw;
   height:27vh;
@@ -183,7 +140,6 @@ ul.menu
 .navbar .menu li a 
 {
   color: #767779;
-  /* margin-left: 25px; */
   transition: color 0.3s ease;
   align-items: center;
   padding-left: 4px;
@@ -193,7 +149,6 @@ ul.menu
 {
   color: #1F1F24;
 }
-
 
 .menu-btn
 {
@@ -242,7 +197,7 @@ ul.menu
   cursor: pointer;
 }
 
-/* home sector estilos */
+/* -------home sector styles -------*/
 .home
 {
   display: flex;
@@ -258,7 +213,6 @@ ul.menu
 .containerPortada img
 {
 width: 100vw;
-/* position: relative; */
 top: 20px;
 z-index: 1;
 }
@@ -271,7 +225,6 @@ z-index: 1;
 .containerPortada .home-content .text-1 
 {
   display: flex;
-  /* position: relative; */
   font-size: 20px;
   color:#767779;
   justify-content: center;
@@ -282,7 +235,6 @@ z-index: 1;
 
 .home .home-content .text-2 
 {
-  /* position: relative; */
   font-size: 35px;
   font-weight: 700;
   margin-left: -3px;
@@ -305,7 +257,6 @@ z-index: 1;
   background-color: #D2C2B0; 
   position: absolute;
 }
-
 
 .contenedor-palabras
 {
@@ -434,58 +385,6 @@ ul.palabras
   padding: 20px 15px;
 }
 
-
-/*QUERY STAR MEDIA RESPONSIVO*/
-
-@media (max-width: 947px){
-  .max-width{
-      padding: 0 50px;
-    }
-    .menu-btn{
-      display: block;
-      background-color: #e1d8d3;
-      padding: 15px 10px;
-      max-width: 150x;
-      border-radius: 8px;
-      text-align: center;
-      font-size: 18px;
-      
-  }
-  .menu-btn i.active::before{
-      content: "\f00d" ;
-      background-color: #e1d8d3;
-      padding: 15px 10px;
-      border-radius: 8px;
-      text-align: center;
-      font-size: 18px;
-
-  }
-    .navbar .menu{
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      left: -100%;
-      top: 0;
-      background:#ffffff;
-    }
-      .navbar .menu.active {
-      left: 0%;
-      }    
-
-    .navbar .menu li
-    {
-      display:block;
-            }
-    .navbar .menu li a
-    {
-      display: inline-flexbox;
-      margin: 20px 0;
-      font-size: 20px;
-      text-align: center;
-      padding-top: 80px;
-                    }
-  }
-  
 
 /*ROMINA - hasta aca ESTILO NAVBAR*/
 body {
@@ -788,21 +687,24 @@ body {
   color:white;
 }
 
-.botones {
+.botones 
+{
   text-align: center;
 }
 
-.ingreso {
+.ingreso 
+{
   display: flex;
   flex-direction: row-reverse;
 }
 
-.tituloCarrito {
+.tituloCarrito 
+{
   text-align: center;
-  
 }
 
-.producto h4 {
+.producto h4 
+{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -810,11 +712,10 @@ body {
   padding: 3px;
   width: max-content;
   background-color: #ffffff;
-  
-
 }
 
-.subtotal h4 {
+.subtotal h4 
+{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -824,17 +725,17 @@ body {
   height: max-content;
   float: right;
   background-color: #ffffff;
-  
 }
 
 
-.imagen_producto img{
+.imagen_producto img
+{
   width: 20%;
   height: 20%;
 }
 
-.detalles_compra h4 {
-  
+.detalles_compra h4 
+{
   border: 2px solid black;
   padding: 3px;
   width: max-content;
@@ -845,7 +746,8 @@ body {
 
 }
 
-.pie h4 {
+.pie h4 
+{
   border: 2px solid black;
   padding: 3px;
   width: max-content;
@@ -855,7 +757,8 @@ body {
   background-color: #ffffff;
 }
 
-.pie2 h4 {
+.pie2 h4 
+{
   display: block;
   border: 2px solid black;
   padding: 3px;
@@ -864,3 +767,53 @@ body {
 }
 
 
+/*QUERY STAR MEDIA RESPONSIVO*/
+
+@media (max-width: 947px){
+  .max-width{
+      padding: 0 50px;
+    }
+    .menu-btn{
+      display: block;
+      background-color: #e1d8d3;
+      padding: 15px 10px;
+      max-width: 150x;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 18px;
+  }
+  .menu-btn i.active::before{
+      content: "\f00d" ;
+      background-color: #e1d8d3;
+      padding: 15px 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 18px;
+
+  }
+    .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background:#ffffff;
+    }
+      .navbar .menu.active {
+      left: 0%;
+      }    
+
+    .navbar .menu li
+    {
+      display:block;
+            }
+    .navbar .menu li a
+    {
+      display: inline-flexbox;
+      margin: 20px 0;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 80px;
+                    }
+  }
+  

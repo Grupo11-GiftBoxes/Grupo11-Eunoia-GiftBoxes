@@ -5,23 +5,23 @@
 <%- include ('./partials/head.ejs') %>  
 </head>
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
 <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
       <h1> Usuarios</h1>
     <ul>
-        <% for (let i=0; i<users.length;i++) { %>
+        <% for (let i=0; i<userResult.length;i++) { %>
             <li>
-                <a href="/users/detail/<%= users[i].id %>"> <%= users[i].nombre %></a>
-            </li> 
-                    <% } %>
+                <a href="/users/detail/<%= userResult[i].id %>"> <%= userResult[i] %></a>
+            </li>
+        <% } %>
     </ul>
     <h2> Search </h2>
     <form action="/users/search" method="GET">
